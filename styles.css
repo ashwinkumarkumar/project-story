@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    border-left: 5px solid #052030;
+    border-right: 5px solid #052030;
+}
+
+header {
+    background: #052030;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Media query for small devices (portrait) */
+@media (max-width: 600px) {
+    article {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .tooltip .tooltiptext {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    .date-box {
+        padding: 3px 7px;
+        font-size: 14px;
+    }
+}
+
+p {
+    text-indent: 2em;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #052030;
+    color: #ffffff;
+}
+
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #333;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.tooltip:hover {
+    color: #000;
+    font-weight: bolder;
+}
+
+.date-box {
+    display: inline-block;
+    background-color: #f4f8fb;
+    border: 2px solid #052030;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 0;
+    font-weight: bold;
+}
